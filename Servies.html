@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SegelBoot IT Solutions</title>
+  <link rel="stylesheet" href="service.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/SBlogo-2.png" alt="SegelBoot Logo" class="logo-img" />
+    </div>
+
+    <div id="menu-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Servies.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Managed IT Services & Support</h1>
+      <p>At SegelBoot IT Solutions LLP, we are dedicated to providing a comprehensive range of IT solutions to help businesses thrive in the digital landscape.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/917720846048" class="btn gradient-btn" target="_blank">GET A FREE QUOTE</a>
+        <a href="#" class="btn solid-btn">LEARN MORE</a>
+        <a href="https://wa.me/917720846048" class="btn light-btn" target="_blank">LIVE CHAT</a>
+
+      </div>
+    </div>
+  </section>
+
+  
+<!-- SERVICE SECTION -->
+  <section class="services-section">
+    <div class="service-card orange">
+      <div class="icon">🌐</div>
+      <h3>Website Development</h3>
+      <a href="#web-dev">Learn More</a>
+    </div>
+    <div class="service-card lightgray">
+      <div class="icon">🖥️</div>
+      <h3>Website Designing</h3>
+      <a href="#ui-ux">Learn More</a>
+    </div>
+    <div class="service-card white">
+      <div class="icon">💻</div>
+      <h3>Software Development</h3>
+      <a href="#software">Learn More</a>
+    </div>
+    <div class="service-card white">
+      <div class="icon">📱</div>
+      <h3>Mobile App Development</h3>
+      <a href="#mobile">Learn More</a>
+    </div>
+    <div class="service-card darkblue">
+      <div class="icon">📣</div>
+      <h3>Digital Marketing</h3>
+      <a href="#digital">Learn More</a>
+    </div>
+    <div class="service-card yellow">
+      <div class="icon">📝</div>
+      <h3>Content Writing</h3>
+      <a href="#content">Learn More</a>
+    </div>
+  </section>
+
+
+
+  <!-- CONNECTED SECTION -->
+  <section class="connected-systems">
+    <div class="connected-container">
+      <div class="connected-text">
+        <h2>Welcome to Our IT Services</h2>
+        <p>
+          At SegelBoot IT Solutions LLP, we are dedicated to providing a comprehensive range of IT solutions to help businesses thrive in the digital landscape. Our team of skilled professionals excels in various domains, ensuring that your technology needs are met with precision and innovation. Explore our diverse set of services below:
+        </p>
+      </div>
+      <div class="connected-graphic">
+        <img src="images/SB_Logo.png" alt="Connected Icons Graphic" class="circle-icon" />
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.querySelector(".connected-systems");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("slide-in");
+          }
+        });
+      }, {
+        threshold: 0.1,
+      });
+
+      if (section) {
+        observer.observe(section);
+      }
+    });
+  </script>
+
+  <!-- WEB-DEV -->
+  <section class="web-dev-section" id="web-dev">
+    <div class="web-dev-container">
+      <div class="web-dev-text">
+        <h2>Website Development</h2>
+      <p>
+       Our website development services blend cutting-edge technology with creative design, 
+       resulting in highly functional and visually appealing websites that leave a lasting impression.
+      </p>
+
+      <button class="accordion">Exploring Different Technologies</button>
+      <div class="panel">
+        <p>At SegelBoot IT Solutions LLP, we specialize in website development using a variety of technologies to cater to your unique business needs. Our expert developers are proficient in various frameworks and platforms, including WordPress, MERN (MongoDB, Express.js, React, Node.js), PHP, and Laravel, as well as various CMS (Content Management System) platforms. Let’s dive deeper into these technologies:</p>
+      </div>
+
+      <button class="accordion">WordPress</button>
+      <div class="panel">
+        <p>WordPress is a versatile and widely-used content management system (CMS) that allows us to create websites ranging from simple blogs to complex e-commerce platforms. With its user-friendly interface and a plethora of themes and plugins, we can quickly build and customize websites to match your brand identity and functionalities.</p>
+      </div>
+    
+    <button class="accordion">CMS Platforms</button>
+      <div class="panel">
+        <p>Content Management Systems (CMS) are platforms that enable you to manage, edit, and update website content without requiring extensive technical knowledge. We specialize in various CMS platforms such as WordPress, Joomla, Drupal, Webflow, Wix, and more. These platforms offer templates, plugins, and modules that enhance functionality and ease of use.</p>
+      </div>
+      <button class="accordion">Web Applications with MEAN Stack</button>
+      <div class="panel">
+        <p>Web application development using the MEAN stack presents a robust and adaptable method for constructing dynamic and engaging web applications. The MEAN stack is an abbreviation that incorporates MongoDB, Express.js, AngularJS (or Angular), and Node.js, offering a comprehensive suite of technologies for both frontend and backend development. Let’s delve into each component of the MEAN stack:
+        <ul style="padding-left: 15px;color:  #6f6e6e; font-size: 1rem;
+  font-weight: 500;">
+        <li>MongoDB</li>
+        <li>Express.js</li>
+        <li>Angular (or AngularJS)</li>
+        <li>Node.js</li></ul></p>
+      </div>
+    </div>
+
+      <div class="web-dev-image">
+        <img src="images/web-development.jpg" alt="Website Development" />
+      </div>
+    </div>
+  </section>
+
+  
+
+<!-- UI-UX SECTION -->
+<section class="uiux-section" id="ui-ux">
+    <div class="uiux-container">
+      <div class="uiux-image">
+        <img src="images/Web-designing-ui-ux.jpg" alt="UI/UX Design">
+      </div>
+      <div class="uiux-text">
+        <h2>Website Designing (UI/UX)</h2>
+        <p>
+          We understand the significance of a user-friendly interface and delightful user experience. 
+          Our UI/UX experts craft designs that captivate users and enhance usability.
+        </p>
+
+        
+      <button class="accordion">Crafting Engaging Digital Experiences</button>
+      <div class="panel">
+        <p>Website designing, particularly in the realm of user interface (UI) and user experience (UX), plays a pivotal role in shaping the online presence of businesses and organizations. At [Your IT Company Name], we specialize in creating visually appealing and intuitively navigable websites that captivate users and drive engagement. Our approach to website designing encompasses a blend of creativity, functionality, and user-centricity, ensuring that every website we craft delivers an exceptional digital experience.</p>
+      </div>
+
+      <button class="accordion">Key Elements of Website Designing (UI/UX)</button>
+      <div class="panel">
+        <p>WordPress is a versatile and widely-used content management system (CMS) that allows us to create websites ranging from simple blogs to complex e-commerce platforms. With its user-friendly interface and a plethora of themes and plugins, we can quickly build and customize websites to match your brand identity and functionalities.</p>
+      </div>
+    
+    
+      <button class="accordion">Key Elements of Website Designing (UI/UX)</button>
+      <div class="panel">
+        <ul style="padding-left: 15px;color:  #6f6e6e; font-size: 1rem;
+  font-weight: 500;">
+        <li>User Research</li>
+        <li>Wireframing and Prototyping</li>
+        <li>Visual Design</li>
+        <li>Responsive Design</li>
+        <li>Usability Testing</li></ul></p>
+      </div>
+
+      
+      <button class="accordion">Software Tools Used for UI/UX Designing</button>
+      <div class="panel">
+        <ul style="padding-left: 15px;color:#6f6e6e; font-size: 1rem;
+  font-weight: 500;">
+        <li>Adobe XD</li>
+        <li>Sketch</li>
+        <li>Figma</li>
+        <li>InVision</li></ul></p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+<!-- SOFTWARE SECTION -->
+<section class="software-section" id="software">
+    <div class="software-container">
+      <div class="software-text">
+        <h2>Software Development</h2>
+        <p>
+          From custom software solutions to enterprise-grade applications,
+          we create software tailored to your needs, ensuring optimal
+          performance and functionality.
+        </p>
+      </div>
+      <div class="software-image">
+        <img src="images/software-development.jpg" alt="Software Development" />
+      </div>
+    </div>
+  </section>
+
+
+<!-- Mobile SECTION -->
+  <section class="uiux-section" id="mobile">
+    <div class="uiux-container">
+      <div class="uiux-image">
+        <img src="images/mobile-app-development.jpg" alt="UI/UX Design">
+      </div>
+      <div class="uiux-text">
+        <h2>Mobile App Development</h2>
+        <p>
+         We specialize in developing mobile apps across various platforms, creating seamless experiences that extend your brand’s reach to users on the go.
+        </p>
+        </div></div>
+        </section>
+        
+ <!-- Digital Section -->
+  <section class="digital-section" id="digital">
+    <div class="digital-container">
+      <div class="digital-text">
+        <h2>Digital Marketing</h2>
+        <p>
+          Our digital marketing strategies encompass a range of techniques to drive traffic,
+          engagement, and conversions. We tailor our approaches to match your unique business goals.
+        </p>
+
+        <button class="accordion">Navigating the Digital Landscape for Success</button>
+        <div class="panel">
+          <p>
+            In today’s digital age, establishing a strong online presence is essential for businesses to thrive...
+          </p>
+        </div>
+
+        <button class="accordion">Key Components of Digital Marketing</button>
+        <div class="panel">
+          <ul>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Search Engine Marketing (SEM)</li>
+            <li>Social Media Marketing (SMM)</li>
+            <li>Content Marketing</li>
+            <li>Email Marketing</li>
+            <li>Digital Advertising</li>
+            <li>Analytics and Data Insights</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="digital-image">
+        <img src="images/digital-marketing-1.jpg" alt="Digital Marketing" />
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const accordions = document.querySelectorAll(".accordion");
+
+      accordions.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          const panel = this.nextElementSibling;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const panel = btn.nextElementSibling;
+      const isActive = btn.classList.contains("active");
+
+      // Close all
+      accordions.forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".panel").forEach(p => p.style.maxHeight = null);
+
+      // Toggle current
+      if (!isActive) {
+        btn.classList.add("active");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+});
+</script>
+
+
+<section class="content-writing-section" id="content">
+  <div class="content-writing-container">
+    <div class="content-writing-image">
+      <img src="images/content-writing.jpg" alt="Content Writing" />
+    </div>
+
+   <div class="digital-text">
+      <h2>Content Writing</h2>
+      <p>
+       Our skilled content writers create compelling, relevant, and valuable content that resonates with your audience, fostering engagement and driving traffic.
+      </p>
+
+      <button class="accordion">Crafting Compelling Narratives for Digital Success</button>
+      <div class="panel">
+        <p>Content writing is the art and science of creating written material for various platforms with the aim of engaging, informing, entertaining, and influencing a target audience. In the digital age, where information is abundant and attention spans are limited, effective content writing is essential for establishing a strong online presence, building brand authority, and connecting with your audience on a deeper level.</p>
+      </div>
+
+      <button class="accordion">Key Aspects of Content Writing</button>
+      <div class="panel">
+      <ul style="padding-left: 15px;color:  #6f6e6e; font-size: 1rem;
+        font-weight: 500;">
+        <li>Audience Understanding</li>
+        <li>Research</li>
+        <li>Engaging Headlines</li>
+        <li>Clear and Concise Writing</li>
+        <li>Storytelling</li>
+        <li>Value and Utility</li>
+        <li>SEO Integration</li>
+        <li>Variety of Formats</li>
+        <li>Consistency</li>
+      </ul>
+    </div>
+    <button class="accordion">Content Writing in Digital Marketing</button>
+      <div class="panel">
+        <p>Content writing plays a pivotal role in digital marketing strategies:
+
+SEO: Well-written, optimized content helps your website rank higher in search engine results, increasing organic traffic.
+
+Social Media: Engaging posts, captivating captions, and shareable content enhance your brand’s presence on social media platforms.
+
+Lead Generation: Informative and relevant content attracts potential customers and nurtures them through the sales funnel.
+
+Thought Leadership: Thought-provoking articles and blog posts establish you as an authority in your industry, building trust with your audience.
+
+Brand Storytelling: Effective storytelling helps convey your brand’s values, mission, and personality, creating a strong connection with your audience.</p>
+      </div>
+    </div>
+      </div>
+  </div>
+</section>
+
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", function () {
+      // Toggle active class
+      this.classList.toggle("active");
+
+      // Toggle panel visibility
+      const panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+
+
+<!-- FOOTERRR -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-form">
+      <h2>We're Here To Help!</h2>
+      <form>
+        <div class="input-row">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email Address" required />
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Address" required />
+          <input type="text" placeholder="Residential/Business" required />
+        </div>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit" class="send-button">SEND MESSAGES</button>
+      </form>
+    </div>
+
+    <div class="footer-contact">
+      <div class="contact-block">
+        <h3>📍 Branch Office</h3>
+        <p>
+          Survey No - 61 To 63,<br>
+          Daffodills, Katewasti PIM Saudgar,<br>
+          RH No 21 Pune,<br>
+          Maharashtra, India - 411027
+        </p>
+      </div>
+
+      <div class="contact-block">
+        <h3>🕒 Hours</h3>
+        <p>Monday-Saturday: 8am – 10pm<br>Sunday: Closed</p>
+      </div>
+
+      <div class="contact-block">
+        <h3>📞 Call Us</h3>
+        <p>‪+91-7720846048‬</p><br>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

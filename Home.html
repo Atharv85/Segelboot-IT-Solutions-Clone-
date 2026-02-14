@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SegelBoot IT Solutions</title>
+  <link rel="stylesheet" href="home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/SBlogo-2.png" alt="SegelBoot Logo" class="logo-img" />
+    </div>
+
+    <div id="menu-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Servies.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to SegelBoot IT Solutions</h1>
+      <p>We help you stay ahead in today’s fast-paced digital landscape.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/917720846048" class="btn gradient-btn" target="_blank">GET A FREE QUOTE</a>
+        <a href="#" class="btn solid-btn">LEARN MORE</a>
+        <a href="https://wa.me/917720846048" class="btn light-btn" target="_blank">LIVE CHAT</a>
+
+      </div>
+    </div>
+  </section>
+
+<!-- WHAT WE DO SECTION -->
+<section class="services-section">
+  <h2 class="section-title">What We Do</h2>
+  <div class="services-grid">
+
+    <a href="Servies.html#web-dev" style="text-decoration: none;" class="service-box orange">
+      <img src="images/global_64px.png" alt="Website Development" />
+      <p>Website Development</p>
+    </a>
+
+    <a href="Servies.html#ui-ux" style="text-decoration: none;" class="service-box lightgray">
+      <img src="images/website-designing.png" alt="Website Designing" />
+      <p>Website Designing</p>
+    </a>
+
+    <a href="Servies.html#software" style="text-decoration: none;" class="service-box lightgray">
+      <img src="images/software-development.png" alt="Software Development" />
+      <p>Software Development</p>
+    </a>
+
+    <a href="Servies.html#mobile" style="text-decoration: none;" class="service-box lightgray">
+      <img src="images/mobile-app-development.png" alt="Mobile App Development" />
+      <p>Mobile App Development</p>
+    </a>
+
+    <a href="Servies.html#digital" style="text-decoration: none;" class="service-box darkblue">
+      <img src="images/social-media.png" alt="Digital Marketing" />
+      <p>Digital Marketing</p>
+    </a>
+
+    <a href="Servies.html#content" style="text-decoration: none;" class="service-box orange">
+      <img src="images/content-writing.png" alt="Content Writing" />
+      <p>Content Writing</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- CONSULTING SECTION -->
+
+<section class="consulting-section">
+  <div class="consulting-content">
+    <div class="text-block">
+      <h2>Professional IT Services &<br />Technology Consulting</h2>
+      <p>
+        We are a dynamic IT company established in January 2019, dedicated to delivering exceptional solutions tailored to meet the unique needs of our clients. With a proven track record of successfully completing over 10 projects across various industries, we pride ourselves on our commitment to excellence and innovation.
+      </p>
+    </div>
+    <div class="logo-block">
+      <img src="images/SB_Logo.png" alt="IT Consulting Logo" class="consulting-logo" />
+    </div>
+  </div>
+</section>
+
+<!-- CONNECTED SECTION -->
+<section class="connected-systems">
+  <div class="connected-container">
+    <div class="connected-text">
+      <h2>We Create Fully Connected Systems So You Can Focus On Your Business</h2>
+      <p>
+        Join us on our journey of innovation and let us help you navigate the ever-evolving world of technology. 
+        Explore our website to learn more about our services and how we can partner with you to turn your vision into reality.
+      </p>
+    </div>
+    <div class="connected-graphic">
+      <img src="images/it-services-03.png" alt="Connected Icons Graphic" class="circle-icon" />
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTERRR -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-form">
+      <h2>We're Here To Help!</h2>
+      <form>
+        <div class="input-row">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email Address" required />
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Address" required />
+          <input type="text" placeholder="Residential/Business" required />
+        </div>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit" class="send-button">SEND MESSAGES</button>
+      </form>
+    </div>
+
+    <div class="footer-contact">
+      <div class="contact-block">
+        <h3>📍 Branch Office</h3>
+        <p>
+          Survey No - 61 To 63,<br>
+          Daffodills, Katewasti PIM Saudgar,<br>
+          RH No 21 Pune,<br>
+          Maharashtra, India - 411027
+        </p>
+      </div>
+
+      <div class="contact-block">
+        <h3>🕒 Hours</h3>
+        <p>Monday-Saturday: 8am – 10pm<br>Sunday: Closed</p>
+      </div>
+
+      <div class="contact-block">
+        <h3>📞 Call Us</h3>
+        <p>‪+91-7720846048‬</p><br>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector(".connected-systems");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("slide-in");
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% visible
+      }
+    );
+
+    if (section) {
+      observer.observe(section);
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector(".contact-section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("slide-in");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (section) observer.observe(section);
+  });
+</script>
+
+<!-- NAVBAR -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+</script>
+
+
+</body>
+</html>
